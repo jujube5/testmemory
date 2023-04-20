@@ -1,7 +1,6 @@
 package testmemory
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -27,11 +26,9 @@ func TestParseRaw(t *testing.T) {
 
 func TestReadMemInfo(t *testing.T) {
 	meminfo := ReadMemInfo()
-	extract_type := reflect.TypeOf(meminfo).Elem()
-    extract_name := extract_type.Name()
-	if extract_name != "MemInfo" {
+	if meminfo.Total < 512 {
 		Colorize(RedBrightFont, "ReadMemInfo -- FAIL!")
-		t.Errorf("Result was incorrect, got: %s, want: %s.", extract_name, "MemInfo")
+		t.Errorf("Result was incorrect.")
 	} else {
 		Colorize(CyanBrightFont, "ReadMemInfo -- OK!")
 	}
