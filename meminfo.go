@@ -1,7 +1,6 @@
 package testmemory
 
 import (
-	"fmt"
 	"os"
 	"bufio"
 	"strings"
