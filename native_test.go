@@ -37,10 +37,10 @@ func TestDelete(t *testing.T) {
 }
 
 func BenchmarkCache(b *testing.B) {
-    for i := 0; i < 1000000; i++ {
-        Set("bench", "qwerty")
-		Get("bench")
-		Delete("bench")
+    for i := 0; i < b.N; i++ {
+	Set("bench", "qwerty")
+	Get("bench")
+	Delete("bench")
     }
 }
 
