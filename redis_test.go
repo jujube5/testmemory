@@ -11,8 +11,8 @@ func TestRedisCache(t *testing.T) {
 		Colorize(RedBrightFont, "RedisGet -- FAIL!")
 		t.Errorf("Result was incorrect, got: %s, want: %s.", get_value, "test")
 	} else {
-		Colorize(GreenBrightFont, "RedisSet -- OK!")
-		Colorize(GreenBrightFont, "RedisGet -- OK!")
+		Colorize(MagentaBrightFont, "RedisSet -- OK!")
+		Colorize(MagentaBrightFont, "RedisGet -- OK!")
 	}
 	RedisDelete("test")
 	get_value_2 := RedisGet("test")
@@ -20,7 +20,7 @@ func TestRedisCache(t *testing.T) {
 		Colorize(RedBrightFont, "RedisDelete -- FAIL!")
 		t.Errorf("Result was incorrect, got: %s, want: %s.", get_value, "empty")
 	} else {
-		Colorize(GreenBrightFont, "RedisDelete -- OK!")
+		Colorize(MagentaBrightFont, "RedisDelete -- OK!")
 	}
 }
 
