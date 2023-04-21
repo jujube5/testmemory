@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- [Go](https://go.dev/doc/install)
 - Redis
 - [Redis client for Go](https://pkg.go.dev/github.com/go-redis/redis/v9)
 
