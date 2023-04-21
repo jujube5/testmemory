@@ -42,12 +42,12 @@ func BenchmarkStringToInt(b *testing.B) {
 
 func BenchmarkParseRaw(b *testing.B) {
     for i := 0; i < b.N; i++ {
-        key, value := ParseRaw("MemTotal:        7815804 kB")
+        ParseRaw("MemTotal:        7815804 kB")
     }
 }
 
 func BenchmarkReadMemInfo(b *testing.B) {
     for i := 0; i < b.N; i++ {
-        meminfo := ReadMemInfo()
+        ReadMemInfo()
     }
 }
