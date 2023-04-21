@@ -33,3 +33,21 @@ func TestReadMemInfo(t *testing.T) {
 		Colorize(CyanBrightFont, "ReadMemInfo -- OK!")
 	}
 }
+
+func BenchmarkStringToInt(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        StringToInt("1001")
+    }
+}
+
+func BenchmarkParseRaw(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        key, value := ParseRaw("MemTotal:        7815804 kB")
+    }
+}
+
+func BenchmarkReadMemInfo(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        meminfo := ReadMemInfo()
+    }
+}
