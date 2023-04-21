@@ -25,4 +25,4 @@ go run main.go
 ```
 ### Output
 
-![Output](https://drive.google.com/file/d/1DW3ntPPcaNdKvUF08bmg2xKL7ZOKrsQ7/view?usp=sharing)
+<iframe src="https://drive.google.com/file/d/1DW3ntPPcaNdKvUF08bmg2xKL7ZOKrsQ7/preview" width="640" height="480" allow="autoplay"></iframe>
