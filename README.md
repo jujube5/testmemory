@@ -22,6 +22,9 @@ go get github.com/jujube5/testmemory
 cd testmemorymain
 ```
 ```shell
+export PATH=$PATH:/usr/local/go/bin
+```
+```shell
 go run main.go
 ```
 ### Output
