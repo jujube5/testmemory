@@ -26,4 +26,4 @@ go run main.go
 ```
 ### Output
 
-![Output](https://drive.google.com/uc?export=view&id=1DW3ntPPcaNdKvUF08bmg2xKL7ZOKrsQ7)
+![Output](https://drive.google.com/uc?export=view&id=1dXkG_WWHl0B_cm9tiA_5Kessq8T4hNml)
