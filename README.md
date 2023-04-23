@@ -1,6 +1,6 @@
 # Comparison In-Memory Caching
 
-Module for [testmemory](https://github.com/jujube5/testmemorymain)
+Module for the [testmemory](https://github.com/jujube5/testmemorymain) tool.
 
 ## Requirements
 
