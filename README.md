@@ -1,5 +1,7 @@
 # Comparison In-Memory Caching
 
+Module for [testmemory](https://github.com/jujube5/testmemorymain)
+
 ## Requirements
 
 - [Go](https://go.dev/doc/install)
@@ -9,11 +11,7 @@
 ## Installation
 
 ```shell
-go install github.com/jujube5/testmemorymain
-```
-
-```shell
-go get github.com/jujube5/testmemory
+go install github.com/jujube5/testmemorymain@latest
 ```
 
 ## Quickstart
