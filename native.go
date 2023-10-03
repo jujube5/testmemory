@@ -16,7 +16,7 @@ type CacheItems struct {
 var c Cache
 
 func init() {
-	items := make(map[string]CacheItems)
+    items := make(map[string]CacheItems)
     c = Cache{Items: items}
 }
 
@@ -30,7 +30,7 @@ func Get(key string) (any) {
     c.RLock()
     defer c.RUnlock()
     item := c.Items[key]
-	return item.Item
+    return item.Item
 }
 
 func Delete(key string) {
